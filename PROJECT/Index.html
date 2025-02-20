@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan Inspired Website</title>
+    <style>
+        .nissan {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 600px;
+            background-image: url('nissan2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .nissan-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .nissan1 {
+            padding: 20px; 
+            display: flex;
+            background: rgba(155, 156, 156, 0.637);
+            justify-content: flex-end;
+            align-items:flex-start;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }.logo{
+            margin-right: auto;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nissan1 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+        .nissan1 a:hover {
+            color:brown;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .models {
+            text-align: center;
+            padding: 20px;
+        }
+        .car-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .car-item {
+            width: 250px;
+            text-align: center;
+        }
+        .car-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .car-item img:hover {
+            transform: scale(1.1);
+        }
+        .about, .contact {
+            text-align: center;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nissan" style="background-image: url('nissan1.jpg'); height: 600px; background-size: cover; background-position:center;">
+            <nav class="nissan1">
+                <div class="logo">
+                    <img src="nissanlogo.png" alt="Nissan Logo">
+                </div>
+                <a href="#home">Home</a>
+                <a href="#models">Models</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        
+    </header>
+    
+    <section id="home" class="hero">
+        <img src="nissan2.jpg" alt="Car Banner">
+        <div class="hero-text">
+            <h1>Innovation That Excites</h1>
+            <p>Experience the future of driving with our latest models.</p>
+            <button>More Models</button>
+        </div>
+    </section>
+    
+    <section id="models" class="models">
+        <h2>Our Models</h2>
+        <div class="car-grid">
+            <div class="car-item">
+                <img src="nissan1.jpg" alt="Model 1">
+                <p>Model 1 - Performance Redefined</p>
+            </div>
+            <div class="car-item">
+                <img src="nissan2.jpg" alt="Model 2">
+                <p>Model 2 - The Future of Mobility</p>
+            </div>
+            <div class="car-item">
+                <img src="nissan3.jpeg.jpg" alt="Model 3">
+                <p>Model 3 - Unmatched Luxury</p>
+            </div>
+            <div class="car-item">
+                <img src="nissan4.jpeg.jpg" alt="Model 4">
+                <p>Model 4 - Most Luxury</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Nissan Motor India Private Ltd. (NMIPL) incorporated in 2010 is a 100 percent subsidiary of Nissan Motor Co. Ltd. Japan, serving both the domestic and export markets with a manufacturing plant and R&D Centre in Chennai. Nissan with its Global Alliance partner Renault has made an investment of $1.8 billion in the Indian economy facilitating over 70,000 direct and indirect employment and skilling opportunities. Please visit www.nissan.in for more information.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div>Naraayan Kannan</div>
+
+        <div> Director – Communications & CSR, Nissan Motor India Pvt. Ltd.</div>
+            
+            <div> Email: naraayan.kannan@email.nissan.in</p></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Nissan Inspired Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
